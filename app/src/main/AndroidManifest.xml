@@ -16,7 +16,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".SensorActivity" />
-        <activity android:name=".BatteryActivity"></activity>
+        <activity android:name=".BatteryActivity" />
+
+        <service
+            android:name="ServiceSensor.MyIntentService"
+            android:exported="false" />
+        <service
+            android:name="ServiceSensor.MyService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
