@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="CnamTP10"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -17,12 +17,8 @@
         </activity>
         <activity android:name=".SensorActivity" />
         <activity android:name=".BatteryActivity" />
-
         <service
-            android:name="ServiceSensor.MyIntentService"
-            android:exported="false" />
-        <service
-            android:name="ServiceSensor.MyService"
+            android:name="sensorpackage.MySensors"
             android:enabled="true"
             android:exported="true"></service>
     </application>
